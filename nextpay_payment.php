@@ -10,6 +10,7 @@
  * @copyright 2016
  * @package NextPay_Gateway
  * @version 1.0
+ * @UPDate
  */
 class Nextpay_Payment
 {
@@ -484,7 +485,9 @@ class Nextpay_Payment
 	    -24 => "amount incorrect",
 	    -25 => "trans_id resend and not allow to payment",
 	    -26 => "Token not send",
+	    -27 => "order_id incorrect",
 	    -30 => "amount less of limite payment",
+	    -31 => "fund not found",
 	    -32 => "callback error",
 	    -33 => "api_key incorrect",
 	    -34 => "trans_id incorrect",
@@ -517,7 +520,8 @@ class Nextpay_Payment
 	    -69 => "callback success incorrect",
 	    -70 => "callback failed incorrect",
 	    -71 => "phone incorrect",
-	    -72 => "bank not response"
+	    -72 => "bank not response",
+	    -73 => "callback_uri incorrect"
         );
         
         if (array_key_exists($error_code, $error_array)) {
